@@ -1,0 +1,21 @@
+{
+  "name": "Shoutout Button",
+  "description": "A Button infront of names in twitch chat that shortcut '!so {USERNAME}'",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["setup.js"],
+      "runAt": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["script.js", "icons/play-button.png"],
+      "matches": ["*://*.twitch.tv/*"]
+    }
+  ],
+  "host_permissions": ["*://*.twitch.tv/*"]
+}
