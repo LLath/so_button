@@ -1,4 +1,4 @@
-Shout out shortcute for twitch.tv
+Shout out shortcut for twitch.tv
 
 ## Example
 
